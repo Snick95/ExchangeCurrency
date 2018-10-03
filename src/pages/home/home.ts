@@ -32,7 +32,7 @@ export class HomePage {
       })
   }
 
-  getUniqueTransactionsSku(): string[] {
+  getUniqueTransactionsSku() {
     return [...new Set(this.transactions.map(item => item.sku))];;
   }
 
