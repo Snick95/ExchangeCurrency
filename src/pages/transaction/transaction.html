@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Transaction details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>SKU: {{sku}}</h1>
+  <h6>Total Amount: {{totalAmount}} EUR</h6>
+
+  <div>
+    <div class="row header">
+      <div class="col">Currency</div>
+      <div class="col">Amount</div>
+      <div class="col">Amount (EUR)</div>
+    </div>
+    <div class="row" *ngFor="let item of transactions">
+      <div class="col">{{item.currency}}</div>
+      <div class="col">{{item.amount}}</div>
+      <div class="col">{{item.amountConverted}}</div>
+    </div>
+  </div>
+</ion-content>

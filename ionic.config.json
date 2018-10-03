@@ -1,0 +1,7 @@
+{
+  "name": "exchange_bemobile_CarlosMoreno",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
